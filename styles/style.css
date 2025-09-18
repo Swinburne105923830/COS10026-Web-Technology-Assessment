@@ -1,38 +1,101 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url(./fonts/Cinzel-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Felipa';
+    src: url(./fonts/Felipa-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Italianno';
+    src: url(./fonts/Italianno-Regular.ttf);
+}
 :root {
     --text-color: #000000;
     --background-color: #c2a67c;
-    --font-family: 'Arial, sans-serif';
+    --main-text-family: 'Cinzel', serif;
+    --heading-font-family: 'Cinzel',serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+}
+
 body {
-    font-family: var(--font-family);
+    font-family: var(--main-text-family);
+
+    background-color: #dbc497;
+    background-image: linear-gradient(
+        90deg,
+        #9c5d3b  00%,
+        #d1a265  05%,
+        #dfcda8  30%,
+        #dfcda8  80%,
+        #d1a265  95%,
+        #9c5d3b 100%);
     font-size: 20px;
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    background: url('../images/paper.jpg') repeat;
-    background-size: 350px 350px;
 }
+
 header {
-    background-color: #585e6899;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color:#002248;
+    background: radial-gradient(#2c364d, #002857);
+    box-shadow:
+        inset 0px -15px 20px -20px #000000,
+        0px 3px 3px #b4820c,
+        0px 7px #ffd66e,
+        0px 7px 15px black;
+
+    width: calc(100dvw - 40px); /* Remove 20px either side for padding*/
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 20px;
+    
 }
 
 header div {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-left: 20px;
-    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+header h1 {
+    color: #ffd66e;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: #000000 0.1rem 0.1rem 5px;
+    margin: 0;
 }
 nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 100dvw;
-    flex-shrink: 1;
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 4rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 0.2em;
+}
+nav li:hover {
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transform: scale(1.2);
 }
 
 .logo {
-    max-height: 80px;
+    height: 100px;
+}
+
+main {
+    margin: 60px 80px;
 }
