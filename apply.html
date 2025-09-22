@@ -33,15 +33,14 @@
         <fieldset>
         <legend>Personal Details</legend>
         <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" required>
-         <label for="middlename">Middle Name(s) Optional: </label>
-        <input type="text" id="middlename" name="middlename">
+        <input type="text" id="firstname" name="firstname" maxlength="20" pattern="[a-zA-Z]+" required>
         <br>
         <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" required>
+        <input type="text" id="lastname" name="lastname" maxlength="20" pattern="[a-zA-Z]+" required>
         <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
         <br>
-        
         <label>Gender:</label>
         <br>
         <input type="radio" id="male" name="gender" value="male">
@@ -51,14 +50,32 @@
         <input type="radio" id="other" name="gender" value="other">
         <label for="other">Other</label>
         <br>
+
         <br>
          <label>Contact Information:</label>
+        <br>
+
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="">Please Select State</option>
+            <option value="vic">VIC</option required>
+            <option value="nsw">NSW</option>
+            <option value="qld">QLD</option>
+            <option value="nt">NT</option>
+            <option value="wa">WA</option>
+            <option value="sa">SA</option>
+            <option value="tas">TAS</option>
+            <option value="act">ACT</option>
+        </select>
+        <br>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" pattern="{4}" required>
         <br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="contact" required>
         <br>
         <label for="phone">Phone:</label>
-        <input type="text" id="phone" name="contact" required>
+        <input type="text" id="phone" name="contact" pattern="\d{8,12}"required>
         <br>
     </fieldset>
     <fieldset>
@@ -66,12 +83,8 @@
     
         <p><em>Please read full job description on <strong><a href="jobs.html">Jobs Page</a></strong> before applying to role</em></p>
         <br>
-        <label for="job">Job:</label>
-        <select id="job" name="job">
-            <option value="other">Please Select Job/Role Applying for</option>
-            <option value="lecturer">Lecturer</option>
-            <option value="senior developer">Senior Developer</option>
-        </select>
+        <label for="job_reference">Job Reference Number:</label>
+        <input type="text" id="job_reference" name="job_reference" pattern="[a-zA-Z]{5}" required>
         <br>
         <br>
         
@@ -95,13 +108,10 @@
         </label>
         <br>
         <label>
-            <input type="checkbox" name="other_education"> Other education:
+            <input type="checkbox" name="other_skills"> Other Skills:
         </label>
-        <input type="text" name="other_education">
+        <textarea id="other_skills" name="other_skills" rows="4" cols="40" placeholder="Enter other relevant skills here..."></textarea> 
     </fieldset>
-        <br>
-        <textarea id="resume" name="resume" rows="4" cols="30"></textarea>
-        <br>
         
         <input type="submit" value="Register">
     </fieldset>
