@@ -26,12 +26,12 @@
 
     <form action="submit.php" method="post">
     <fieldset>
-        <legend>User Information</legend>
+        <legend>Applicant Information</legend>
         
         <label for="name">First Name:</label>
         <input type="text" id="firstname" name="firstname" required>
-         <label for="name">Middle Name(s): </label>
-        <input type="text" id="middlename" name="middlename"> <label>(Optional)</label>
+         <label for="name">Middle Name(s) Optional: </label>
+        <input type="text" id="middlename" name="middlename">
         <br>
         <label for="name">Last Name:</label>
         <input type="text" id="lastname" name="lastname" required>
@@ -43,6 +43,15 @@
             <option value="female">Female</option>
             <option value="other">Other</option>
         </select>
+        <br>
+        <br>
+        <label for="job">Job:</label>
+        <select id="job" name="job">
+            <option value="other">Please Select Job/Role Applying for</option>
+            <option value="lecturer">Lecturer</option>
+            <option value="senior developer">Senior Developer</option>
+        </select>
+        <br>
         <br>
         
         <label>Preferred Contact Method:</label>
