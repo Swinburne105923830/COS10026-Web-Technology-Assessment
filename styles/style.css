@@ -18,6 +18,13 @@
     --heading-font-family: 'Cinzel',serif;
 }
 
+/*Background Image for Index Page*/
+body{
+    background-image: url("images/hogwarts.jpg");
+    height: 400px;
+    background-size: cover;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font-family);
 }
@@ -99,3 +106,4 @@ nav li:hover {
 main {
     margin: 60px 80px;
 }
+
