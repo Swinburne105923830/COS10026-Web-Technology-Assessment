@@ -1,3 +1,20 @@
+/*
+filename:[style.css]
+author:[Damian & Jacob]
+created:[9/9/2025]
+last modified:[22/9/2025]
+description:[CSS styling for index.html, about.html, jobs.html and apply.html]
+*/
+/*Background Image for Index Page*/
+body {
+  background-image: url("images/hogwarts.jpg");
+  background-size: cover; /* Makes the image cover the entire page */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Makes the body take the full height of the viewport */
+  margin: 0; /* Removes default margin */
+}
+
+
 @font-face {
     font-family: 'Cinzel';
     src: url(./fonts/Cinzel-VariableFont_wght.ttf);
@@ -14,15 +31,8 @@
 :root {
     --text-color: #000000;
     --background-color: #c2a67c;
-    --main-text-family: 'Cinzel', serif;
+    --main-text-family: 'Felipa', serif;
     --heading-font-family: 'Cinzel',serif;
-}
-
-/*Background Image for Index Page*/
-body{
-    background-image: url("images/hogwarts.jpg");
-    height: 400px;
-    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
