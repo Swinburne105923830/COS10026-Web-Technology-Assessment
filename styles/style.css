@@ -117,3 +117,69 @@ main {
     margin: 60px 80px;
 }
 
+.slogan {
+    font-family: 'Italianno', cursive;
+    font-size: 1.8rem;
+    color: #ffd66e;
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.company-details {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+.company-details h2 {
+    color: #002248;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.company-details p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.castle-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+footer {
+    background-color: #002248;
+    background: linear-gradient(90deg, #2c364d, #001a35);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.5);
+}
+
+footer a {
+    color: #ffd66e;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus, footer a:focus {
+    outline: 2px dashed #ffd66e;
+    outline-offset: 4px;
+}
+
