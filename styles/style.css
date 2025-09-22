@@ -98,7 +98,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: inherit;
+    color: white;
     font-weight: 800;
     font-size: 1.4rem;
     letter-spacing: 0.2em;
@@ -122,10 +122,31 @@ nav li:hover {
 
 }
 
-/*Profile Picture Sizing on About Page*/
-.profile_pic {
-    height: 100px;
+.profile-container {
+  display: flex;
+  gap: 20px; /* Space between profiles */
+  justify-content: center; /* Center all profiles */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  padding: 20px;
 }
+
+.profile {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  width: 180px; /* You can adjust this */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.profile_pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 
 main {
     margin: 60px 80px;
@@ -141,7 +162,7 @@ main {
 }
 
 .company-details {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 188, 94, 0.85);
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -169,6 +190,13 @@ main {
     border-radius: 12px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.announcements {
+    background-color: rgba(255, 188, 94, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 footer {
