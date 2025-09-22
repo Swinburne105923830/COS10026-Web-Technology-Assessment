@@ -109,6 +109,10 @@ nav li:hover {
     transform: scale(1.2);
 }
 
+.about_heading {
+    text-align:center;
+}
+
 /*Hogwarts Crest Logo Sizing*/
 .logo {
     height: 100px;
@@ -124,7 +128,7 @@ nav li:hover {
 
 .profile-container {
   display: flex;
-  gap: 20px; /* Space between profiles */
+  gap: 50px; /* Space between profiles */
   justify-content: center; /* Center all profiles */
   flex-wrap: wrap; /* Allows wrapping on small screens */
   padding: 20px;
@@ -134,7 +138,7 @@ nav li:hover {
   border: 1px solid #ccc;
   padding: 15px;
   text-align: center;
-  width: 180px; /* You can adjust this */
+  width: 180px; 
   background-color: #f9f9f9;
   border-radius: 8px;
 }
@@ -146,7 +150,6 @@ nav li:hover {
   border-radius: 50%;
   margin-bottom: 10px;
 }
-
 
 main {
     margin: 60px 80px;
