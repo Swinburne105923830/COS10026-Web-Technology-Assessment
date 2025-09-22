@@ -109,7 +109,21 @@ nav li:hover {
     transform: scale(1.2);
 }
 
+/*Hogwarts Crest Logo Sizing*/
 .logo {
+    height: 100px;
+}
+
+/*Team Photo*/
+.team_pic {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*Profile Picture Sizing on About Page*/
+.profile_pic {
     height: 100px;
 }
 
