@@ -58,7 +58,10 @@
         <input type="text" id="phone" name="contact" required>
         <br>
     </fieldset>
-        <br>
+    <fieldset>
+        <legend>Job Details</legend>
+    
+        <p><em>Please read full job description on <strong><a href="jobs.html">Jobs Page</a></strong> before applying to role</em></p>
         <br>
         <label for="job">Job:</label>
         <select id="job" name="job">
@@ -70,15 +73,31 @@
         <br>
         
        
-        
+        <label>Level of Education (Tick all that apply)</label>
+        <br>
         <label>
-            <input type="checkbox" name="subscribe"> Subscribe to newsletter
+            <input type="checkbox" name=""> Completed Tertiary Education
         </label>
         <br>
-        
-        <label for="comments">Comments:</label>
+        <label>
+            <input type="checkbox" name=""> Undergraduate Degree
+        </label>
         <br>
-        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+        <label>
+            <input type="checkbox" name=""> Graduate Degree
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name=""> TAFE
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name=""> Other education:
+        </label>
+        <input type="text" name="other_education">
+    </fieldset>
+        <br>
+        <textarea id="resume" name="resume" rows="4" cols="30"></textarea>
         <br>
         
         <input type="submit" value="Register">
