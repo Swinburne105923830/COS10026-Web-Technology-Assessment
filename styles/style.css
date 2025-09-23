@@ -31,6 +31,7 @@ body {
 :root {
     --text-color: #000000;
     --background-color: #c2a67c;
+    --accent-color: #002248;
     --main-text-family: 'Felipa', serif;
     --heading-font-family: 'Cinzel',serif;
 }
@@ -58,7 +59,7 @@ body {
 }
 
 header {
-    background-color:#002248;
+    background-color:var(--accent-color);
     background: radial-gradient(#2c364d, #002857);
     box-shadow:
         inset 0px -15px 20px -20px #000000,
@@ -75,8 +76,7 @@ header {
 }
 
 header div {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
     max-width: 100%;
 }
@@ -175,7 +175,7 @@ main {
 }
 
 .company-details h2 {
-    color: #002248;
+    color: var(--accent-color);
     margin-bottom: 15px;
     text-align: center;
 }
@@ -228,7 +228,7 @@ td {
 }
 
 footer {
-    background-color: #002248;
+    background-color: var(--accent-color);
     background: linear-gradient(90deg, #2c364d, #001a35);
     color: #ffffff;
     text-align: center;
@@ -257,3 +257,6 @@ nav a:focus, footer a:focus {
     outline-offset: 4px;
 }
 
+fieldset {
+    border: 2px solid --text-color;
+}
