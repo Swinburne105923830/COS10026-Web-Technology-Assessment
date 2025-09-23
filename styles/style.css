@@ -202,6 +202,10 @@ main {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+.apply_heading {
+    text-align: center;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
