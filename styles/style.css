@@ -124,7 +124,7 @@ nav li:hover {
     height: 300px;
     display: block;
     margin: 0 auto;
-
+    border-radius: 12px
 }
 
 .profile-container {
@@ -136,14 +136,13 @@ nav li:hover {
 }
 
 .profile {
-  border: 1px solid #ccc;
   color: white;
   padding: 15px;
   text-align: center;
   width: 180px; 
   background-color:var(--accent-color);
     background: radial-gradient(#2c364d, #001a35);
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .profile_pic {
@@ -254,4 +253,12 @@ nav a:focus, footer a:focus {
 
 fieldset {
     border: 2px solid var(--text-color);
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dd {
+    margin: 0;
 }
