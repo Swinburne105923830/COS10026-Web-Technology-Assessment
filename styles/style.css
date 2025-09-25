@@ -262,3 +262,7 @@ dt {
 dd {
     margin: 0;
 }
+
+table, th, td {
+    border: solid rgb(104, 52, 0);
+}
