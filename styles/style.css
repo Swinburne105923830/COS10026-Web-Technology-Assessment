@@ -146,8 +146,8 @@ nav li:hover {
 }
 
 .profile_pic {
-  width: 100px;
-  height: 100px;
+  width: 100;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
